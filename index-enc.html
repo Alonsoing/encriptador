@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style_encrip.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <img cLass="logo" src="imagenes_encript/Frame 6.png"alt="logo de alura" >
+        </header>
+        <main>
+            <section>
+                <textarea id="entradaTexto" class ="text-area"  cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet consectetur adipiscing elit Orci montes sit et diam risus scelerisque vitae est Tortor maecenas nunc ut laoreet Eget diam mauris quam quisque ut eget fringilla sit elit Libero sodales duis fames id diam feugiat aliquet non egestas" oninput="procesarTexto()"></textarea>
+                <div>
+                    <h6 class="información" >Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button  onclick="obtenerOperation('encriptar')" class="btn-encriptar">Encriptar</button >
+                    <button  onclick="obtenerOperation('desencriptar')" class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section>
+                <textarea id="salidaTexto" class="mensaje" cols="20" rows="10"placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas."></textarea>
+                <div>
+                    <button  onclick="copiarTexto()" class="btn-copiar">Copiar</button>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <p>Copyright &copy; 2023, Alonso Eslava.</p>
+        </footer>
+        <script src="java.js"></script>  
+    </body>    
+</html>            
+
